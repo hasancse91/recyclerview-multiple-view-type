@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/profilePhoto"
+        app:layout_constraintStart_toEndOf="@id/profilePhoto"
+        android:textSize="@dimen/profile_name_text_size"
+        android:textColor="@color/profile_name_color"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileName"
+        app:layout_constraintStart_toStartOf="@id/profileName"
+        android:layout_marginTop="8dp"
+        tools:text="10:45 PM, 20 Sep 2019"/>
+
+    <TextView
+        android:id="@+id/postDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/content_color"
+        android:layout_marginTop="@dimen/standard_margin"
+        app:layout_constraintTop_toBottomOf="@id/profilePhoto"
+        app:layout_constraintStart_toStartOf="@id/profilePhoto"
+        tools:text="An awesome image I have captured with my phone. Friends!!! Give me about your opinion!"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
