@@ -6,4 +6,5 @@
 
     <color name="profile_name_color">#1D1D1D</color>
     <color name="content_color">#353535</color>
+    <color name="activity_background_color">#E0E0E0</color>
 </resources>

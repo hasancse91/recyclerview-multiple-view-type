@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/standard_margin"
+    android:layout_marginEnd="@dimen/standard_margin"
+    android:layout_marginTop="@dimen/standard_margin">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePhoto"
@@ -32,7 +35,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/profileName"
         app:layout_constraintStart_toStartOf="@id/profileName"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         tools:text="10:45 PM, 20 Sep 2019"/>
 
     <TextView
