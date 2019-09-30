@@ -1,4 +1,4 @@
-# Recyclerview multiple view type
+# Recyclerview multiple view type (Kotlin)
 
 Suppose, we need to populate a single list with different types of data/view. For example, in a single list of timeline (like Facebook) we have to show various posts. Some posts contain only text, some of them contain text and image and some of them contain video. How can we show different views and handle click event differently?
 
