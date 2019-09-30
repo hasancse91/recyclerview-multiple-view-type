@@ -29,10 +29,6 @@ class TimelineRecyclerViewAdapter(private val postDataList : List<PostData>):
         }
     }
 
-    override fun getItemCount(): Int {
-        return postDataList.size
-    }
-
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
         val postData = postDataList[position]
@@ -64,6 +60,10 @@ class TimelineRecyclerViewAdapter(private val postDataList : List<PostData>):
                 Toast.makeText(context, "Image type post", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    
+    override fun getItemCount(): Int {
+        return postDataList.size
     }
 
     override fun getItemViewType(position: Int): Int {
