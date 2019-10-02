@@ -6,6 +6,8 @@ Suppose, we need to populate a single list with different types of data/view. Fo
 
 Look at the above photo. First item of list contains only text. Users may expect to go details page when click on it. Second item contains text and image. Users expects to see full screen image view when click on it. If there were another item with video, users will expect play the video when click on it. Let's dive the source code to implement different types of view in a single `RecyclerView`.
 
+You can download and test sample APK file from [here](https://github.com/hasancse91/recyclerview-multiple-view-type/blob/master/data/app-debug.apk) 
+
 ## Source code
 This is the Adapter class of `RecyclerView`. This class is extended from `RecyclerView.Adapter<RecyclerView.ViewHolder>()` class.
 ### Adapter of RecyclerView
